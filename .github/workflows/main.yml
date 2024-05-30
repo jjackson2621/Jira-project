@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/setup-node@v4
       with: 
-        node-verdion: '20.0'
+        node-version: '20.0'
 
     - name: ZAP Scan
       uses: zaproxy/action-baseline@v0.3.0
