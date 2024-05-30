@@ -1,0 +1,18 @@
+name: OWASP ZAP Scan
+
+on:
+    push: # Trigger the scan when code is pushed
+        
+
+jobs:
+    zap_scan:
+        runs-on: ubuntu-latest
+        name: Scan ZAP website
+        steps:
+            - name: Instakk ZAP
+              uses: sudo apt-get install -y
+ zaproxy
+            -name: ZAP Scan
+             uses: zaproxy/action-baseline@v0.3.0
+              with:
+                target: 'https://thinking-tester-contact-list.herokuapp.com/'
