@@ -1,2 +1,8 @@
-rm -rf node_modules
-rm package-lock.json
+// package.json
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
