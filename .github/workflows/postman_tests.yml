@@ -1,13 +1,12 @@
-name: Postman Tests
-
+name: Test Website
 on:
   push:
     branches:
-      - main # Change this to your desired branch
+      - main
 
 jobs:
   test:
-    runs-on: wundiws-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
@@ -16,10 +15,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '21'
 
-      - name: Install Newman
-        run: npm install -g newman
+      - name: Install dependencies
+        run: npm install
 
-      - name: Run Postman tests
-        run: newman run path/to/contactlist.json
+      - name: Run tests
+        run: npm test
