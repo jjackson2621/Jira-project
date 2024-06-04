@@ -1,0 +1,12 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "Repository has e2e test, api, ui, and security testing scripts. The file attached has the manual test scripts and java scrum board screenshots.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
